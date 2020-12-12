@@ -1,0 +1,50 @@
+{
+    "emp_data": {
+        "Adam": {
+            "Skils": [
+                "Python",
+                "Flask"
+            ],
+            "hours": 0
+        },
+        "Sam": {
+            "Skils": [
+                "Html",
+                "Css"
+            ],
+            "hours": 8
+        },
+        "David": {
+            "Skils": [
+                "MySQL",
+                "Flask",
+                "Python"
+            ],
+            "hours": 0
+        }
+    },
+    "current_projects": {
+        "Meditech": {
+            "Employees": {
+                "David": {
+                    "hours": 8,
+                    "Skills": [
+                        "MySQL",
+                        "MySQL"
+                    ]
+                }
+            }
+        },
+        "Bloging website": {
+            "Employees": {
+                "Adam": {
+                    "hours": 8,
+                    "Skills": [
+                        "Python",
+                        "Flask"
+                    ]
+                }
+            }
+        }
+    }
+}
