@@ -2,17 +2,17 @@
     "emp_data": {
         "Adam": {
             "Skils": [
-                "Python",
-                "Flask"
+                "Python-Flask",
+                "Python"
             ],
-            "hours": 0
+            "hours": 8
         },
         "Sam": {
             "Skils": [
                 "Html",
                 "Css"
             ],
-            "hours": 8
+            "hours": 4
         },
         "David": {
             "Skils": [
@@ -24,24 +24,18 @@
         }
     },
     "current_projects": {
-        "Meditech": {
-            "Employees": {
-                "David": {
-                    "hours": 8,
-                    "Skills": [
-                        "MySQL",
-                        "MySQL"
-                    ]
-                }
-            }
-        },
-        "Bloging website": {
+        "SPMS": {
             "Employees": {
                 "Adam": {
-                    "hours": 8,
+                    "hours": 4,
                     "Skills": [
-                        "Python",
-                        "Flask"
+                        "Python"
+                    ]
+                },
+                "Sam": {
+                    "hours": 4,
+                    "Skills": [
+                        "HTML"
                     ]
                 }
             }
