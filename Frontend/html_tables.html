@@ -55,14 +55,15 @@
             </table>
         
 
-
-
         <hr />
        
         <h2>Appointment Form</h2>
         <form action='/appointment' method="post"  >
+
             <lable>Enter Username</lable><br>
-            <input type='text' placeholder='Enter Username' ><br /><br />
+            <input type='text' placeholder='Enter Username' />
+            
+            <br /><br />
 
             <label>Enter Number</label><br />
             <input type='number' ><br /><br />
@@ -78,9 +79,11 @@
 
             <textarea >
 
-            </textarea><br /><br />
+            </textarea>
+            
+            <br /><br />
 
-            <input type='submit' >
+            <input type='submit'  >
 
         </form>
 
@@ -88,7 +91,7 @@
 
         <h2>Login Form</h2>
 
-        <form action='/appointment' method="post">
+        <form action='/login' method="post">
             <lable>Username</lable><br />
             <input type='text'><br /><br />
 
@@ -99,11 +102,12 @@
         </form>
 
 
+
         <hr />
 
         <h2>Registration Form</h2>
 
-        <form action='/appointment' method="post" entype='multipart/form-data'>
+        <form action='/signup' method="post" entype='multipart/form-data'>
             <lable>Username</lable><br />
             <input type='text'><br /><br />
 
@@ -114,7 +118,6 @@
             <lable><input type='radio' name='gender'> Female</lable>
             <lable><input type='radio' name='gender'> Male</lable>
             <lable><input type='radio' name='gender'> Others</lable>
-
 
             <br/>
             <br/>
@@ -134,8 +137,10 @@
             <lable>Javascript <input type='checkbox'></lable><br />
             <lable>Python <input type='checkbox'></lable><br />
             <br />
-            <lable>Profession</lable><br />
+            
+            <lable>Profession </lable><br />
             <input list='profs'> <br /><br />
+
             <datalist id='profs'>
                 <option value='Engineer'></option>
                 <option value='Doctor'></option>
