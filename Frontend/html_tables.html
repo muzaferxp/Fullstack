@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            form{
+                border: 1px solid gray; 
+            }
+        </style>
+    </head>
+    <body>
+       <center>
+            <h2>Html Table</h2>
+            <hr />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                        <td>Value 4</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                        <td>Value 4</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                        <td>Value 4</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                        <td>Value 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+
+
+
+        <hr />
+       
+        <h2>Appointment Form</h2>
+        <form action='/appointment' method="post"  >
+            <lable>Enter Username</lable><br>
+            <input type='text' placeholder='Enter Username' ><br /><br />
+
+            <label>Enter Number</label><br />
+            <input type='number' ><br /><br />
+
+            <lable>Enter Email</lable><br />
+            <input type='email' ><br /><br />
+
+            <input type='date'>
+
+            <input type='time'><br /><br />
+
+            <lable>Enter Message</lable><br>
+
+            <textarea >
+
+            </textarea><br /><br />
+
+            <input type='submit' >
+
+        </form>
+
+        <hr />
+
+        <h2>Login Form</h2>
+
+        <form action='/appointment' method="post">
+            <lable>Username</lable><br />
+            <input type='text'><br /><br />
+
+            <lable>Password</lable><br />
+            <input type='password'><br /><br />
+
+            <input type='submit'>
+        </form>
+
+
+        <hr />
+
+        <h2>Registration Form</h2>
+
+        <form action='/appointment' method="post" entype='multipart/form-data'>
+            <lable>Username</lable><br />
+            <input type='text'><br /><br />
+
+            <lable>Email</lable><br />
+            <input type='email'><br /><br />
+
+
+            <lable><input type='radio' name='gender'> Female</lable>
+            <lable><input type='radio' name='gender'> Male</lable>
+            <lable><input type='radio' name='gender'> Others</lable>
+
+
+            <br/>
+            <br/>
+            <lable>Gender</lable><br />
+            <select>
+                <option>Female</option>
+                <option>Male</option>
+            </select><br /><br />
+
+            <lable>Upoload Image</lable><br />
+            <input type="file"><br /><br />
+
+
+            <lable>Skills</lable><br /><br />
+            <lable>Html <input type='checkbox'></lable><br />
+            <lable>Css <input type='checkbox'></lable><br />
+            <lable>Javascript <input type='checkbox'></lable><br />
+            <lable>Python <input type='checkbox'></lable><br />
+            <br />
+            <lable>Profession</lable><br />
+            <input list='profs'> <br /><br />
+            <datalist id='profs'>
+                <option value='Engineer'></option>
+                <option value='Doctor'></option>
+                <option value='Loyer'></option>
+            </datalist>
+
+            <lable>Password</lable><br />
+            <input type='password'><br /><br />
+
+            <lable>Re-Enter Password</lable><br />
+            <input type='password'><br /><br />
+
+            <input type='submit'>
+        </form>
+
+    </center>
+        <!-- ---------------------------------------- -->
+
+        <iframe src='https://muzafer.pythonanywhere.com/fullstack' style='width:100%;height:100vh' >
+
+        </iframe>
+
+        <br /><br /><br /><br />
+    </body>
+        <script src="" async defer></script>
+    </body>
+</html>
