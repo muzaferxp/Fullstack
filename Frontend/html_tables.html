@@ -6,16 +6,129 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="main.css">
         <style>
+
+            /* using tag name */
             form{
                 border: 1px solid gray; 
             }
+
+            h2{
+                color:teal;
+            }
+
+            input{
+                padding:5px;
+                margin:5px;
+                border:1px solid rgb(73, 194, 231);
+                background-color: rgba(50,50,50,0.3);
+                color:white;
+            }
+            /* using unique id */
+            .custom-form{
+
+                color:white;
+
+                /* applying colors */
+
+                /* 1. color name */
+                /* background-color: gray; */
+
+                /* 2. color code */
+                background-color:#c5cae9;
+
+                /* 3. rgb color values */
+                background-color:rgb(77, 183, 155);
+
+                /* background-color: rgba(100, 130, 220,0.4); */
+
+                width: 35%;
+
+                border-radius: 7px;
+
+                padding:20px;
+
+                background: rgb(24,238,204);
+
+                background: linear-gradient(90deg, rgba(24,238,204,0.6166841736694677) 0%, rgba(9,121,114,1) 35%, rgba(0,212,255,1) 100%);
+
+                box-shadow: 5px 5px 10px gray;
+            }
+
+            /* apply css using class */
+            .custom-form{
+                background-color:rgb(77, 183, 155);
+            }
+
+
+            #demo{
+                height:200px;
+                width:200px;   
+                background-color:rgb(77, 183, 155);
+                border: 2px outset yellow;
+
+                /* border-radius: 50%; */
+
+                /* padding */
+                /* padding : 50px; */
+
+                /* margin */
+                margin:150px
+
+            }
+
+
+            #demo-child{
+                height:100px;
+                width:100px;   
+                
+                margin-top:20px;
+                margin-left:40px;
+                margin-bottom:20px;
+                margin-right:40px;
+
+                /* margin: top right bottom left; */
+
+                /* margin: 20px 40px 20px 40px; */
+
+                /* margin: top-bottom right-left; */
+                margin: 40px 20px;
+
+                padding-top:20px;
+                padding-left:10px;
+                padding-bottom:20px;
+                padding-right:10px;
+
+                padding: 20px 10px 20px 10px;
+
+                padding: 20px 10px;
+
+                background-color:rgb(150, 100, 155);     
+            }
+            
+            .sbtn{
+                background-color: blue;
+                padding:8px 12px;
+                margin:4px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px rgba(10,10,10,0.3);
+
+            }
+
+        
         </style>
     </head>
     <body>
+
+        <div id='demo'>
+            <div id='demo-child'>
+                <button>Button</button>
+            </div>
+        </div>
+
        <center>
-            <h2>Html Table</h2>
+            <h2 style='color:teal'>Html Table</h2>
             <hr />
             <table>
                 <thead>
@@ -58,7 +171,7 @@
         <hr />
        
         <h2>Appointment Form</h2>
-        <form action='/appointment' method="post"  >
+        <form action='/appointment' method="post" class='custom-form'  >
 
             <lable>Enter Username</lable><br>
             <input type='text' placeholder='Enter Username' />
@@ -83,7 +196,7 @@
             
             <br /><br />
 
-            <input type='submit'  >
+            <input type='submit'   class='sbtn' >
 
         </form>
 
@@ -91,14 +204,14 @@
 
         <h2>Login Form</h2>
 
-        <form action='/login' method="post">
+        <form action='/login' method="post" id='login_form' class='custom-form'>
             <lable>Username</lable><br />
             <input type='text'><br /><br />
 
             <lable>Password</lable><br />
             <input type='password'><br /><br />
 
-            <input type='submit'>
+            <input type='submit' class='sbtn'>
         </form>
 
 
@@ -107,13 +220,12 @@
 
         <h2>Registration Form</h2>
 
-        <form action='/signup' method="post" entype='multipart/form-data'>
+        <form action='/signup' method="post" entype='multipart/form-data' class='custom-form'>
             <lable>Username</lable><br />
             <input type='text'><br /><br />
 
             <lable>Email</lable><br />
             <input type='email'><br /><br />
-
 
             <lable><input type='radio' name='gender'> Female</lable>
             <lable><input type='radio' name='gender'> Male</lable>
@@ -153,7 +265,7 @@
             <lable>Re-Enter Password</lable><br />
             <input type='password'><br /><br />
 
-            <input type='submit'>
+            <input type='submit'  class='sbtn'>
         </form>
 
     </center>
