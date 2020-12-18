@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+
+                body{
+                    height:150vh;
+                }
+
+                /* postion */
+                /* 1. absolute */
+                /* .box2{
+                    position:absolute;
+                    bottom:0%;
+                    left: 0%;
+                } */
+
+
+                .box2{
+                    position:relative;
+                    top:100px;
+                    left: 10px;
+                }
+                
+
+                .chatbutton{
+                    position:fixed;
+                    bottom:5%;
+                    right:5%;
+                    background-color: teal;
+                    padding:5px;
+                    color:white;    
+            }
+
+
+                /* overflow */
+
+            .box1{
+                border: 1px solid gray;
+                padding:20px;
+                margin:20px;
+                height:10px;
+                width:300px
+            }
+            .box2{
+                border: 1px solid rgb(139, 3, 3);
+                padding:20px;
+                margin:20px;
+                height:200px;
+                width:400px
+            }
+
+
+            .set-overflow{
+                overflow: hidden;
+                overflow-x:auto;
+                overflow-y:auto;
+               
+            }
+
+           
+
+            
+        </style>
+    </head>
+    <body>
+
+        <button class='chatbutton'>Live chat</button>
+
+        <div class='main' style='width:500px;height:500px;padding:20px;border:2px solid green;'>
+           
+       
+        <div class='box1'>
+
+        </div>
+
+        <div class='box2'>
+
+        </div>
+        
+
+        </div>
+
+       <br />
+       <br />
+
+        <div class='set-overflow' style='width:500px;height:200px;padding:20px;border:2px solid red;'>
+            <div class='box1'>
+
+            </div>
+            <div class='box1'>
+
+            </div>
+            <div class='box1'>
+
+            </div>
+            <div class='box1'>
+
+            </div>
+        </div>
+
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
