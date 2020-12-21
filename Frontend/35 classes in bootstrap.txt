@@ -1,0 +1,54 @@
+color classes:
+1) blue : primary
+2) green : success 
+3) black : dark
+4) light : light
+5) info : cyan
+6) yellow : warning
+7) danger : red 
+
+> bootstrap background-color :
+sytax : bg-primary
+
+
+> text color:
+syntax: text-dark
+
+> button classes
+1) btn 
+2) btn-primary
+3) btn-sm
+4) btn-outline-dard
+
+> Div classes
+1) shadow
+2) border  || border-primary border-light || border-bottom border-top
+3) rounded
+4) container
+5) card
+
+> form classes
+1) input,textarea: form-control
+2) select dropdown : custom-select
+
+> margin classes
+1) m-1 -  m-4 //all sides
+2) mt-2   //margin-top
+3) mr-2   //margin-right
+4) mb-2   //margin-bottom
+5) ml-2   //margin-left
+6) my-2    //top and bottom
+7) mx-2    //right and left
+
+> padding
+1) p-1 - p-4
+2) pt-2 //padding top
+3) pr-2   //padding-right
+4) pb-2   //padding-bottom
+5) pl-2   //padding-left
+6) py-2    //top and bottom
+7) px-2    //right and left
+
+> flex - box
+1) d-flex
+2) flex-wrap
