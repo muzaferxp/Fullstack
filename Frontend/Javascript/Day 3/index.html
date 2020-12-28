@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    </head>
+    <body class='bg-light'>
+        <div class='container pt-4 bg-white shadow-sm' style='min-height:100vh'>
+            <div class='p-2 mt-4  px-4 border border-light rounded'>
+                <h1 class='h1  text-center border-bottom text-muted' id='header'>Javascript Basics - Day 2</h1>
+                <h2 class='text-muted'>
+                    <ol>
+                       <li>Functions</li>
+                    </ol>
+                </h2>
+            </div>
+            
+            
+            <hr />
+
+            <input class='form-control' id='username' placeholder='Enter your name'>
+            
+            <label>Gender</label>
+            <select class='custom-select' onchange="alert('changed')" id='gender_input'>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+
+            <textarea id='message' class='form-control'>
+
+            </textarea>
+
+            <button id='submit_btn' class='btn-primary btn' onclick='say_hello()'  >Say Hello</button>
+
+            <div id='output'>
+                    Ouput
+            </div>
+            <hr />
+
+            
+            <ol id='list_items'>
+               
+            </ol>
+
+            <div class='container border shahow p-4' id='my_cards'>
+
+            </div>
+           
+        </div>
+        <script src="main.js" ></script>
+        <script src="dynamic_page.js" ></script>
+    </body>
+</html>
