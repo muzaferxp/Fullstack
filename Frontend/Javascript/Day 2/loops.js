@@ -20,8 +20,9 @@ for(x in dict_Data){
     console.log(x)
     console.log(dict_Data[x])
 }
-var i = 10
-var Status = true
+
+var i = 10;
+var Status = true;
 while(Status){
     console.log(i)
 
