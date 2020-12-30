@@ -28,16 +28,11 @@ function say_hello(){
 }
 
 //======================event listners=========
+//onclick
+//onchange
+//onkeyup
 
 
-
-//====================built in functions
-
-//push()
-//join()
-//keys()
-//values()
-//split()
 
 //DOM
 

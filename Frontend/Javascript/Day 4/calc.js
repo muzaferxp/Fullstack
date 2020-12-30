@@ -57,9 +57,6 @@ function calculate(){
         total = num1 * num2
     }
 
-   
-
-
 
     document.getElementById("total").innerHTML = "Total: " + total
 
