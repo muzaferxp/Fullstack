@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css"
+rel="stylesheet"
+/>
+       
+    </head>
+    <body class='bg-light'>
+        <div class='bg-white container m-4 p-4' >
+                <h3 class='text-muted'>Todo List</h3>
+                <div class='d-flex'>
+                        <input placeholder='To do...' id='user_input' class='form-control'>
+                        <button class='btn btn-sm btn-primary' onclick='add_item()'>Enter</button>
+                </div>
+                <ul class="list-group mt-2" id='mylist'>
+
+                  </ul>
+        </div>
+
+     
+    <script>
+        //============================JAVASCRIPT DOM SELECTORS=============
+
+        var data = ["Item 1" , "Item 2", "Item 3", "New Item"]
+
+        //document.getElementById()
+        function add_item(){
+
+
+            var item = document.getElementById("user_input").value
+
+            
+           
+
+            if(item != ""){
+                var temp = []
+                for(x=0; x < data.length ; x++){
+                    temp.push(data[x].toLowerCase())
+                }
+                if(temp.includes(item.toLowerCase())){
+                    alert("Same Item already exists in the list")
+                }
+                else{
+                
+                    data.push(item)
+                    document.getElementById("user_input").value = ""
+                    refresh_data()
+                }
+            }else{
+                alert("Item cannot be empty!")
+            }
+
+           
+          
+            
+        }
+
+       
+        function refresh_data(){
+            document.getElementById("mylist").innerHTML = ""
+            data.forEach(function(item,index){
+               
+                document.getElementById("mylist").innerHTML += `<li id='item_${index + 1}' class="list-group-item"> ${item} <button style='float:right' id='delete_${index + 1}' onclick='delete_item(this.id)' class=' btn btn-sm btn-danger'>Remove</button></li>`
+
+            })
+        }
+
+
+       
+
+        function delete_item(id){
+            document.getElementById("item_" + id.split("_")[1]).remove()
+
+            var temp = []
+            for(x = 0; x< data.length; x++){
+                if(data[x] == data[parseInt(id.split("_")[1]) - 1]){
+                    console.log("ITEM DELETED")
+                }
+                else{
+                    temp.push(data[x])
+                }
+                
+            }
+
+            data = temp
+        
+            console.log(data)
+
+        }
+
+
+
+        refresh_data()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //document.querySelector("li:nth-child(even)").style.display = "none"
+      
+
+
+
+
+
+
+    </script>
+    </body>
+</html>

@@ -3,7 +3,8 @@
 <html>
     <head>
         <title></title>
-      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <!-- Google Fonts -->
@@ -31,6 +32,27 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="emp" role="tabpanel" aria-labelledby="emp-tab">
+                        <button class='btn btn-sm btn-info' onclick='add_emp_form()' >Add Employee</button>
+
+
+                        <div class='mx-auto card p-4 ' id='add_form' style='display:none'>
+                            <h3 class='text-center text-info'>Add Employee</h3>
+                                <input class='form-control' id='emp_name' placeholder="Name">
+                                <input class='form-control my-2' id='emp_skills' placeholder="Skils eg: Python,Html">
+                                <input class='form-control' id='emp_hours' placeholder="Working Hours">
+                                <button class='btn btn-sm btn-info' onclick='add_employee()'>Submit</button>
+                                <button class='btn btn-sm btn-info' onclick='cancel_emp()'>Cancel</button>
+                        </div>
+
+
+                        <div class='mx-auto card p-4 ' style='display:none'>
+                            <h3 class='text-center text-info'>Edit Employee</h3>
+                                <input class='form-control' id='emp_name' placeholder="Name">
+                                <input class='form-control my-2' id='emp_skills' placeholder="Skils eg: Python,Html">
+                                <input class='form-control' id='emp_hours' placeholder="Working Hours">
+                                <button class='btn btn-sm btn-info' onclick='add_employee()'>Submit</button>
+                        </div>
+
                         <div id='emp_profiles'>
                         
                         </div>

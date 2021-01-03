@@ -23,6 +23,7 @@ var data = {
                 "Python"
             ],
             "hours": 0
+           
         },
         "Rahul": {
             "skills": [
@@ -78,7 +79,6 @@ var data = {
                     "skills": [
                         "Python",
                         "Mysql"
-                        
                     ]
                 }
             }
@@ -89,7 +89,28 @@ var data = {
 
 console.log(data["emp_data"])
 
+function cancel_emp(){
+    document.getElementById("add_form").style.display = "none"
+}
+function add_emp_form(){
+    document.getElementById("add_form").style.display = "block"
+}
 
+function add_employee(){
+    var name = document.getElementById("emp_name").value 
+    var skills = document.getElementById("emp_skills").value
+    var hours = document.getElementById("emp_hours").value 
+
+    data["emp_data"][name] = {"skills" : skills.split(","), "hours" : hours}
+
+
+
+
+
+    console.log(data["emp_data"])
+
+    init()
+}
 
 function init(){
     document.getElementById("emp_profiles").innerHTML = ""
@@ -108,7 +129,7 @@ function init(){
                                 <div class='d-flex'>
                                 <h5>skills :</h5>
 
-                                <div class='d-flex'>
+                                <div class='d-flex flex-wrap'>
                                     ${skills}
                                 </div>
                                 </div>
@@ -149,7 +170,7 @@ function init(){
                                 <div class='d-flex'>
                                 <h5>skills :</h5>
 
-                                <div class='d-flex'>
+                                <div class='d-flex flex-wrap'>
                                     ${skills}
                                 </div>
                                 </div>
@@ -157,10 +178,6 @@ function init(){
                                 </div>`
 
                             }
-
-
-
-
                 
                 document.getElementById("projects").innerHTML += `<div style='background-color:#5ee0c6'  class='card p-4 my-4 rounded'>
                                                                         <h3>${project_name}</h3>
