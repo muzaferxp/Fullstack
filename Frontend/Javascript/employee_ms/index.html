@@ -13,6 +13,12 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body class='bg-light' style='min-height:100vh;' >
         <div class='container bg-white' style='min-height:100vh;'>
@@ -37,6 +43,17 @@
 
                         <div class='mx-auto card p-4 ' id='add_form' style='display:none'>
                             <h3 class='text-center text-info'>Add Employee</h3>
+
+                            <div class="alert alert-danger" id='epm_error_msg'  style='display:none' role="alert">
+                             
+                              </div>
+
+                              <div class="alert alert-success" id='epm_success_msg'  style='display:none' role="alert">
+                               
+                              </div>
+                              
+                               
+                               
                                 <input class='form-control' id='emp_name' placeholder="Name">
                                 <input class='form-control my-2' id='emp_skills' placeholder="Skils eg: Python,Html">
                                 <input class='form-control' id='emp_hours' placeholder="Working Hours">
@@ -45,12 +62,23 @@
                         </div>
 
 
-                        <div class='mx-auto card p-4 ' style='display:none'>
+                        <div class='mx-auto card p-4 ' id='edit_emp_form' style='display:none'>
                             <h3 class='text-center text-info'>Edit Employee</h3>
-                                <input class='form-control' id='emp_name' placeholder="Name">
-                                <input class='form-control my-2' id='emp_skills' placeholder="Skils eg: Python,Html">
-                                <input class='form-control' id='emp_hours' placeholder="Working Hours">
-                                <button class='btn btn-sm btn-info' onclick='add_employee()'>Submit</button>
+
+                            <div class="alert alert-danger" id='epm_error_msg_edit'  style='display:none' role="alert">
+                             
+                            </div>
+
+                            <div class="alert alert-success" id='epm_success_msg_edit'  style='display:none' role="alert">
+                             
+                            </div>
+
+                                <input class='form-control' id='edit_emp_name' placeholder="Name">
+                                <input class='form-control my-2' id='edit_emp_skills' placeholder="Skils eg: Python,Html">
+                                <input class='form-control' id='edit_emp_hours' placeholder="Working Hours">
+                                <button class='btn btn-sm btn-info' onclick='edit_employee()'>Submit</button>
+                                <button class='btn btn-sm btn-info' onclick='cancel_edit_emp()'>Cancel</button>
+
                         </div>
 
                         <div id='emp_profiles'>
