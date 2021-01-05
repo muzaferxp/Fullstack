@@ -38,8 +38,17 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="emp" role="tabpanel" aria-labelledby="emp-tab">
-                        <button class='btn btn-sm btn-info' onclick='add_emp_form()' >Add Employee</button>
-
+                       
+                    <div class='d-flex pt-4'>
+                        <input class='form-control' id='search_emp_inp' style='width:200px' placeholder='form-control'>
+                        <div>
+                            <button class='btn btn-sm btn-info' onclick='search_emp()' ><i class="fas fa-search"></i></button>
+                        </div>
+                        <div>
+                            <button class='btn btn-sm btn-info no-wrap' onclick='add_emp_form()' ><i class="fas fa-plus"></i><i class="fas fa-user-alt"></i></button>    
+                        </div>
+                    </div>
+                   
 
                         <div class='mx-auto card p-4 ' id='add_form' style='display:none'>
                             <h3 class='text-center text-info'>Add Employee</h3>
@@ -81,11 +90,19 @@
 
                         </div>
 
-                        <div id='emp_profiles'>
-                        
-                        </div>
+                              
+                                <div class='row' id='emp_profiles'>
+                                    
+                                </div>
+                       
                 </div>
                 <div class="tab-pane fade" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
+
+                                        <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModalSm">
+                              Add Project
+                            </button>
+          
                        <div id='projects'>
 
                        </div>
@@ -96,6 +113,46 @@
              </div>
         </div>
       
+
+       
+  <!-- Central Modal Small -->
+  <div class="modal fade " id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+  
+    <!-- Change class .modal-sm to change the size of the modal -->
+    <div class="modal-dialog modal-sm" role="document">
+  
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input class='form-control' placeholder='Project Name'>
+
+            <!-- Basic dropdown -->
+                <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Basic dropdown</button>
+
+                <div class="dropdown-menu"  id='emp_select'>
+              
+                </div>
+                <!-- Basic dropdown -->
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Central Modal Small -->
+
+
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
