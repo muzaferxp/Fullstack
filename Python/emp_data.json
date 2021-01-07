@@ -5,7 +5,7 @@
                 "Python-Flask",
                 "Python"
             ],
-            "hours": 8
+            "hours": 4
         },
         "Sam": {
             "Skils": [
@@ -20,14 +20,30 @@
                 "Flask",
                 "Python"
             ],
-            "hours": 0
+            "hours": 8
         }
     },
     "current_projects": {
         "SPMS": {
             "Employees": {
                 "Adam": {
-                    "hours": 4,
+                    "hours": 8,
+                    "Skills": [
+                        "Python"
+                    ]
+                },
+                "Sam": {
+                    "hours": 8,
+                    "Skills": [
+                        "HTML"
+                    ]
+                }
+            }
+        },
+        "BLOGGING WEBSITE": {
+            "Employees": {
+                "Adam": {
+                    "hours": 8,
                     "Skills": [
                         "Python"
                     ]
