@@ -1,0 +1,17 @@
+pip install virtualenv
+
+#mkdir myproject
+
+#cd myproject
+
+
+cd Flask-Project
+
+create:
+py -3 -m venv venv
+
+activate:
+venv\Scripts\activate
+
+deactivate:
+venv\Scripts\deactivate

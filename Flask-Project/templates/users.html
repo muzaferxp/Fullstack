@@ -26,9 +26,12 @@
        <table class='table table-responsive table-striped'>
             <thead>
                 <tr>
+
                     {% for x in cols %}
                         <td> {{x}} </td>
                     {% endfor %}
+
+                    
                 </tr>
             </thead>
             <tbody>
@@ -45,6 +48,11 @@
     </center>
        
         
-        <script src="" async defer></script>
+        <script >
+            var data = JSON.parse("{{ res | safe }}")
+
+            console.log(data)
+
+        </script>
     </body>
 </html>
