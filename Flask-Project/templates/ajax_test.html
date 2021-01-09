@@ -10,39 +10,50 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        
-        <form action='/save_survey_data' id='data_form'  method='post'>
-            <input type='text' name='name'  placeholder="Name">
-            <input type='phone' name='phone' placeholder='Phone'>
-            <input type='submit' >
-        </form>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-        
-        $("#data_form").submit(function(){
-            var fd = new FormData($( 'form#data_form' )[ 0 ] );
 
-            alert("FORM SENDING")
-            $.ajax({
-            type: "POST",
-            processData: false,
-            contentType: false,
-            url : "/save_survey_data",
-            data : fd,
+        <h1>Ajax</h1>
+
+        <button onclick='send_data()'>Send Data to flask</button>
+
+        
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script >
+
+        console.log("STARTED...")
+
+        $.ajax({
+            type: "GET",
+            url : "/ajax_api",
             dataType : 'JSON',
             success : function(data){
-                alert("SUCCESS")
                 console.log(data)
             },
             error: function(e){
-               
+                alert("Somthing went wrong!")
                 console.log(e)
             }
         })
 
-        return false;
-        });
 
+
+        function send_data(data){           
+            $.ajax({
+            type: "POST",
+            url : "/save_survey_data",
+            data : {"name" :"Adam", "phone" : 123456789},
+            dataType : 'JSON',
+            success : function(data){
+                console.log(data)
+            },
+            error: function(e){
+                console.log(e)
+            }
+        })
+        }
+       
         </script>
+
     </body>
 </html>

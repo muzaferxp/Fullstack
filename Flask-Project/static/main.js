@@ -1,89 +1,28 @@
 var deleted_emp = {
 }
-var data = {
-    "emp_data": {
-        "Adam": {
-            "skills": [
-                "Python-Flask",
-                "Python"
-            ],
-            "hours": 8
-        },
-        "Sam": {
-            "skills": [
-                "Html",
-                "Css"
-            ],
-            "hours": 4
-        },
-        "David Robin": {
-            "skills": [
-                "MySQL",
-                "Flask",
-                "Python"
-            ],
-            "hours": 0
-        },
-        "Rahul": {
-            "skills": [
-                "Bootstrap",
-                "Jquery"
-            ],
-            "hours": 10
-        },
-        "Aditya": {
-            "skills": [
-                "Python",
-                "Flask"
-            ],
-            "hours": 8  
-        }
+var data = {}
+
+$.ajax({
+    type  : "GET" ,
+    url : "/emp_data",
+    dataType : "JSON",
+    success : function(callback){
+        console.log(callback)
+
+        data = callback.data
+        
+        alert("AJAX SUCCESS")
+        
+        init_project(data["current_projects"])
+        init_emp(data["emp_data"])
     },
-    "current_projects": {
-        "SPMS": {
-            "Employees": {
-                "Adam": {
-                    "hours": 4,
-                    "skills": [
-                        "Python"
-                    ]
-                },
-                "Sam": {
-                    "hours": 4,
-                    "skills": [
-                        "HTML"
-                    ]
-                }
-            }
-        },
-        "COFFEE": {
-            "Employees": {
-                "Aditya": {
-                    "hours": 4,
-                    "skills": [
-                        "Python",
-                        "Flask"
-                    ]
-                },
-                "Azeem": {
-                    "hours": 6,
-                    "skills": [
-                        "HTML",
-                        "Css",
-                        "Javascript"
-                    ]
-                },
-                "Aquib": {
-                    "hours": 6,
-                    "skills": [
-                        "Python",
-                        "Mysql"
-                    ]
-                }
-            }
-        }
+    error: function(e){
+
     }
-}
+})
+
+
+
 console.log(data["emp_data"])
 function cancel_emp(){
     document.getElementById("add_form").style.display = "none"
@@ -154,12 +93,14 @@ function delete_emp(emp){
     delete data["emp_data"][emp]
     console.log(deleted_emp)
     init_emp(data["emp_data"])
+    
 }
 function focus_input(){
     var element = document.getElementById("edit_emp_name")
     element.focus()
 }
 function init_emp(data){
+    alert("INIT EMPLOYEE")
     document.getElementById("emp_profiles").innerHTML = ""
     //document.getElementById("emp_select").innerHTML = ""
     var employees = data
@@ -271,8 +212,6 @@ function init_project(data){
 }
 
 
-init_project(data["current_projects"])
-init_emp(data["emp_data"])
 
 function search_emp(){
 
