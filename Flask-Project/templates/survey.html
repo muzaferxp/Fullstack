@@ -20,23 +20,23 @@
         <script>
         
         $("#data_form").submit(function(){
+
             var fd = new FormData($( 'form#data_form' )[ 0 ] );
 
             alert("FORM SENDING")
             $.ajax({
-            type: "POST",
-            processData: false,
-            contentType: false,
-            url : "/save_survey_data",
-            data : fd,
-            dataType : 'JSON',
-            success : function(data){
-                alert("SUCCESS")
-                console.log(data)
-            },
-            error: function(e){
-               
-                console.log(e)
+                type: "POST",
+                processData: false,
+                contentType: false,
+                url : "/save_survey_data",
+                data : fd,
+                dataType : 'JSON',
+                success : function(data){
+                    alert("SUCCESS")
+                    console.log(data)
+                },
+                error: function(e){
+                    console.log(e)
             }
         })
 

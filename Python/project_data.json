@@ -1,0 +1,34 @@
+ {
+    "SPMS": {
+        "Employees": {
+            "Adam": {
+                "hours": 8,
+                "Skills": [
+                    "Python"
+                ]
+            },
+            "Sam": {
+                "hours": 8,
+                "Skills": [
+                    "HTML"
+                ]
+            }
+        }
+    },
+    "BLOGGING WEBSITE": {
+        "Employees": {
+            "Adam": {
+                "hours": 12,
+                "Skills": [
+                    "Python"
+                ]
+            },
+            "Sam": {
+                "hours": 8,
+                "Skills": [
+                    "HTML"
+                ]
+            }
+        }
+    }
+}

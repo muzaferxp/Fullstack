@@ -6,29 +6,6 @@
                 "Python"
             ],
             "hours": 4
-        },
-        "Sam": {
-            "Skils": [
-                "Html",
-                "Css"
-            ],
-            "hours": 4
-        },
-        "David": {
-            "Skils": [
-                "MySQL",
-                "Flask",
-                "Python"
-            ],
-            "hours": 8
-        },
-        "Rahul": {
-            "Skils": [
-                "MySQL",
-                "Flask",
-                "Python"
-            ],
-            "hours": 8
         }
     },
     "current_projects": {

@@ -10,8 +10,7 @@ $.ajax({
         console.log(callback)
 
         data = callback.data
-        
-        alert("AJAX SUCCESS")
+       
         
         init_project(data["current_projects"])
         init_emp(data["emp_data"])
@@ -89,18 +88,42 @@ function update_emp(emp){
         // element.scrollIntoView()
 }
 function delete_emp(emp){
+   
     deleted_emp[emp] = data["emp_data"][emp]
     delete data["emp_data"][emp]
     console.log(deleted_emp)
     init_emp(data["emp_data"])
-    
+
+
+    //addind data to temp form
+    document.getElementById("delete_emp").value = emp
+
+    //creating a form data
+    formdata = new FormData($( 'form#delete_emp_form' )[ 0 ] );
+
+    //sending form data using ajax
+    $.ajax({
+        type: "POST",
+        processData: false,
+        contentType: false,
+        url : "/delete_emp_api",
+        data : formdata,
+        dataType : 'JSON',
+        success : function(data){
+            alert("SUCCESS")
+            console.log(data)
+        },
+        error: function(e){
+            console.log(e)
+    }
+});
 }
 function focus_input(){
     var element = document.getElementById("edit_emp_name")
     element.focus()
 }
 function init_emp(data){
-    alert("INIT EMPLOYEE")
+   
     document.getElementById("emp_profiles").innerHTML = ""
     //document.getElementById("emp_select").innerHTML = ""
     var employees = data

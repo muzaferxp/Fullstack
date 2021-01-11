@@ -4,23 +4,55 @@ import os, json
 app = Flask(__name__)
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
+#====================GLOBAL FUNCTIONS
+
+def get_emp_data():
+    f = open(ROOT_DIR + "/Flask-Project/static/emp_data.json")
+    data = json.load(f)
+    f.close()
+    return data
+
+
+def update_emp_data_in_file(emp_data,current_projects):
+    obj = {
+        "emp_data" : emp_data,
+        "current_projects" : current_projects
+    }
+    f = open(ROOT_DIR + "/Flask-Project/static/emp_data.json", "w")
+    f.write(json.dumps(obj, indent= 4))
+    f.close()
+
+    return {"status" : "Done"}
+
+
+def delete_emp(emp):
+    data = get_emp_data()
+    empdata = data["emp_data"]
+    empdata.pop(emp)
+    update_emp_data_in_file(empdata, data["current_projects"])
+    return {"status" : "Done"}
+    
+
+
 @app.route("/")
 def home():
     return render_template("index.html")
 
-
-
 @app.route("/emp_data", methods = ["POST", "GET"])
 def emp_data():
     f = open(ROOT_DIR + "/Flask-Project/static/emp_data.json")
-
     data = json.load(f)
-
     f.close()
-
     obj = {'data' : data}
     return  obj
 
+
+@app.route("/delete_emp_api", methods=["POST", "GET"])
+def delete_emp_api():
+    name = request.form['name']
+    delete_emp(name)
+    return {"Status"  : "Done"}
 
 @app.route("/about")
 def about():

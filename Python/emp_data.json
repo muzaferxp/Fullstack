@@ -1,60 +1,26 @@
 {
-    "emp_data": {
-        "Adam": {
-            "Skils": [
-                "Python-Flask",
-                "Python"
-            ],
-            "hours": 4
-        },
-        "Sam": {
-            "Skils": [
-                "Html",
-                "Css"
-            ],
-            "hours": 4
-        },
-        "David": {
-            "Skils": [
-                "MySQL",
-                "Flask",
-                "Python"
-            ],
-            "hours": 8
-        }
+    "Adam": {
+        "Skils": [
+            "Python-Flask",
+            "Python"
+        ],
+        "hours": 0
     },
-    "current_projects": {
-        "SPMS": {
-            "Employees": {
-                "Adam": {
-                    "hours": 8,
-                    "Skills": [
-                        "Python"
-                    ]
-                },
-                "Sam": {
-                    "hours": 8,
-                    "Skills": [
-                        "HTML"
-                    ]
-                }
-            }
-        },
-        "BLOGGING WEBSITE": {
-            "Employees": {
-                "Adam": {
-                    "hours": 8,
-                    "Skills": [
-                        "Python"
-                    ]
-                },
-                "Sam": {
-                    "hours": 4,
-                    "Skills": [
-                        "HTML"
-                    ]
-                }
-            }
-        }
+    "Sam": {
+        "Skils": [
+            "Html",
+            "Css"
+        ],
+        "hours": 0
+    },
+    "David": {
+        "Skils": [
+            "MySQL",
+            "Flask",
+            "Python"
+        ],
+        "hours": 8
     }
+    
+    
 }
