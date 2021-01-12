@@ -1,11 +1,426 @@
 {
     "emp_data": {
-        "Adam": {
-            "Skils": [
-                "Python-Flask",
+        "Gerald Phillips": {
+            "skills": [
+                "Skills",
+                "Python",
+                "flask",
+                "JAVA",
+                "Ajax"
+            ],
+            "hours": 8
+        },
+        "Samuel Williamson": {
+            "skills": [
+                "Data scientist",
+                "Docker",
+                "flask",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Kimberly Collier": {
+            "skills": [
+                "Digital art",
+                "JavaScript",
+                "Digital marketing",
+                "JAVA",
+                "PHP",
+                "Html"
+            ],
+            "hours": 8
+        },
+        "James Johnson": {
+            "skills": [
+                "Skills",
+                "Andriod"
+            ],
+            "hours": 8
+        },
+        "Mr. Anthony Moore Jr.": {
+            "skills": [
+                "Python",
+                "flask",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Juan Stevenson": {
+            "skills": [
+                "Digital marketing",
+                "JavaScript",
+                "Python",
+                "JAVA"
+            ],
+            "hours": 8
+        },
+        "Chad Lopez": {
+            "skills": [
+                "flask",
+                "Skills"
+            ],
+            "hours": 8
+        },
+        "Jennifer Todd": {
+            "skills": [
+                "JavaScript",
+                "Digital art",
+                "Andriod"
+            ],
+            "hours": 8
+        },
+        "Emily Yu": {
+            "skills": [
+                "Digital marketing",
+                "CSS",
+                "Ajax",
+                "JAVA",
+                "Skills",
+                "Digital art",
+                "Html"
+            ],
+            "hours": 8
+        },
+        "Christopher Miller": {
+            "skills": [
+                "Ajax",
+                "JAVA",
+                "Html"
+            ],
+            "hours": 8
+        },
+        "Mr. Joshua Wade": {
+            "skills": [
+                "Mysql",
+                "flask",
+                "Digital art",
+                "Skills",
+                "Docker",
                 "Python"
             ],
-            "hours": 4
+            "hours": 8
+        },
+        "Melanie Parker": {
+            "skills": [
+                "Mysql",
+                "Andriod"
+            ],
+            "hours": 8
+        },
+        "Thomas Medina": {
+            "skills": [
+                "JAVA",
+                "Mysql",
+                "Ajax",
+                "Skills",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Kelly Bridges": {
+            "skills": [
+                "Ajax"
+            ],
+            "hours": 8
+        },
+        "Devin Donovan": {
+            "skills": [
+                "Data scientist",
+                "Digital marketing",
+                "JAVA",
+                "flask",
+                "Mysql",
+                "PHP"
+            ],
+            "hours": 8
+        },
+        "Logan Oconnor": {
+            "skills": [
+                "Docker",
+                "Ajax",
+                "JavaScript",
+                "Digital art",
+                "flask",
+                "PHP"
+            ],
+            "hours": 8
+        },
+        "Heather Richardson": {
+            "skills": [
+                "Mysql",
+                "JAVA",
+                "Python",
+                "Digital marketing"
+            ],
+            "hours": 8
+        },
+        "Steven Williams": {
+            "skills": [
+                "Digital art",
+                "Digital marketing",
+                "Ajax",
+                "Andriod",
+                "PHP",
+                "Mysql"
+            ],
+            "hours": 8
+        },
+        "Shannon Thomas": {
+            "skills": [
+                "Mysql"
+            ],
+            "hours": 8
+        },
+        "Omar Dorsey": {
+            "skills": [
+                "JavaScript",
+                "CSS",
+                "Docker",
+                "Data scientist"
+            ],
+            "hours": 8
+        },
+        "James Maxwell": {
+            "skills": [
+                "Skills"
+            ],
+            "hours": 8
+        },
+        "Maria Kelly": {
+            "skills": [
+                "Digital art",
+                "Skills"
+            ],
+            "hours": 8
+        },
+        "Robin Mosley": {
+            "skills": [
+                "JAVA",
+                "Data scientist",
+                "Digital marketing",
+                "Andriod",
+                "CSS",
+                "Docker"
+            ],
+            "hours": 8
+        },
+        "Jennifer Wang": {
+            "skills": [
+                "Docker",
+                "Python",
+                "Data scientist",
+                "flask",
+                "Ajax"
+            ],
+            "hours": 8
+        },
+        "Anthony Mitchell": {
+            "skills": [
+                "CSS",
+                "Ajax",
+                "Skills",
+                "Andriod"
+            ],
+            "hours": 8
+        },
+        "Olivia Lee": {
+            "skills": [
+                "Html",
+                "Digital art",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Robert Ryan": {
+            "skills": [
+                "flask"
+            ],
+            "hours": 8
+        },
+        "Destiny Mills": {
+            "skills": [
+                "Andriod",
+                "Mysql",
+                "Skills",
+                "PHP",
+                "Digital marketing",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Nicholas Ryan": {
+            "skills": [
+                "PHP",
+                "CSS",
+                "JAVA",
+                "flask",
+                "Data scientist"
+            ],
+            "hours": 8
+        },
+        "Alexander Wallace": {
+            "skills": [
+                "Mysql",
+                "Digital marketing",
+                "Digital art",
+                "Andriod",
+                "Docker"
+            ],
+            "hours": 8
+        },
+        "Roberta Figueroa": {
+            "skills": [
+                "Digital art"
+            ],
+            "hours": 8
+        },
+        "Courtney Smith": {
+            "skills": [
+                "Skills",
+                "CSS",
+                "Ajax",
+                "Andriod"
+            ],
+            "hours": 8
+        },
+        "Stacy Vasquez": {
+            "skills": [
+                "JavaScript",
+                "CSS",
+                "Andriod",
+                "Data scientist",
+                "Html"
+            ],
+            "hours": 8
+        },
+        "Kayla Cannon": {
+            "skills": [
+                "Mysql",
+                "Docker",
+                "JavaScript",
+                "Data scientist",
+                "Digital art"
+            ],
+            "hours": 8
+        },
+        "Travis Miller": {
+            "skills": [
+                "JAVA",
+                "Ajax",
+                "Data scientist",
+                "Html",
+                "Python"
+            ],
+            "hours": 8
+        },
+        "Nicholas Shannon": {
+            "skills": [
+                "Digital marketing"
+            ],
+            "hours": 8
+        },
+        "Holly Lopez": {
+            "skills": [
+                "CSS",
+                "Digital marketing",
+                "flask"
+            ],
+            "hours": 8
+        },
+        "Rebecca Chang": {
+            "skills": [
+                "PHP",
+                "Digital marketing",
+                "Skills",
+                "Html",
+                "CSS",
+                "Mysql",
+                "Digital art"
+            ],
+            "hours": 8
+        },
+        "Sabrina Cunningham": {
+            "skills": [
+                "Digital art"
+            ],
+            "hours": 8
+        },
+        "Robert Lopez": {
+            "skills": [
+                "Python",
+                "PHP",
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Sean Wilson": {
+            "skills": [
+                "Digital marketing",
+                "Ajax",
+                "JavaScript",
+                "Docker",
+                "PHP",
+                "Skills"
+            ],
+            "hours": 8
+        },
+        "Pamela Hodges": {
+            "skills": [
+                "Html",
+                "Andriod",
+                "JavaScript",
+                "flask",
+                "Python"
+            ],
+            "hours": 8
+        },
+        "Charles Lloyd": {
+            "skills": [
+                "JavaScript"
+            ],
+            "hours": 8
+        },
+        "Tamara Reed": {
+            "skills": [
+                "Ajax",
+                "Docker"
+            ],
+            "hours": 8
+        },
+        "John Wall": {
+            "skills": [
+                "flask",
+                "CSS",
+                "PHP",
+                "Digital marketing",
+                "JAVA"
+            ],
+            "hours": 8
+        },
+        "Michelle Snyder": {
+            "skills": [
+                "Skills",
+                "flask",
+                "Python",
+                "Docker",
+                "Ajax"
+            ],
+            "hours": 8
+        },
+        "Courtney Martin": {
+            "skills": [
+                "Docker"
+            ],
+            "hours": 8
+        },
+        "Cynthia Payne": {
+            "skills": [
+                "PHP",
+                "Skills",
+                "JavaScript",
+                "JAVA"
+            ],
+            "hours": 8
         }
     },
     "current_projects": {

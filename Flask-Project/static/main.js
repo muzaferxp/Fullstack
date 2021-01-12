@@ -6,14 +6,14 @@ $.ajax({
     type  : "GET" ,
     url : "/emp_data",
     dataType : "JSON",
-    success : function(callback){
-        console.log(callback)
+    success : function(data){
+        console.log(data)
 
-        data = callback.data
+        main_data = data.data
        
         
-        init_project(data["current_projects"])
-        init_emp(data["emp_data"])
+        init_project(main_data["current_projects"])
+        init_emp(main_data["emp_data"])
     },
     error: function(e){
 

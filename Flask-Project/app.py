@@ -39,6 +39,30 @@ def delete_emp(emp):
 def home():
     return render_template("index.html")
 
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.route("/authenticate", methods= ["GET", "POST"])
+def authenticate():
+    f = open(ROOT_DIR + "/Flask-Project/static/creds.json")
+    creds = json.load(f)
+    f.close()
+    user = request.form["name"]
+    passw = request.form["passw"]
+    if user in creds:
+        if creds[user] == passw:
+            print("Logged in!")
+            status = "Logged in successfully!"
+        else:
+            print("Password incorrect!")
+            status = "Password incorrect!"
+    else:
+        print("User not found")
+        status = "User not found"
+
+    return {"status" : status }
+
 @app.route("/emp_data", methods = ["POST", "GET"])
 def emp_data():
     f = open(ROOT_DIR + "/Flask-Project/static/emp_data.json")
