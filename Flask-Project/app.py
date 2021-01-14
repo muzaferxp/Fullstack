@@ -2,6 +2,7 @@ from flask import *
 import os, json
 
 app = Flask(__name__)
+app.secret_key = "4f5s3v1c2df4s6df"
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -35,9 +36,52 @@ def delete_emp(emp):
     
 
 
+
+@app.route("/check_session")
+def check_session():
+    if "user" in session:
+        return "session stored, name=" + session["user"] 
+    else:
+        return "session did not stored!"
+
+
+@app.route("/set_session")
+def set_session():
+
+    #setting session variable
+    session["name"] = "Abdul"
+
+    return "session variable stored!"
+
+
+
+@app.route("/remove_session")
+def remove_session():
+    #setting session variable
+    session.pop("user")
+
+    return "session variable remove!"
+
+
+
 @app.route("/")
 def home():
-    return render_template("index.html")
+    if "user" in session:
+        return render_template("index.html")
+    else:
+        return redirect(url_for("login"))
+    
+
+
+@app.route("/logout")
+def logout():
+    #setting session variable
+    if "user" in session:
+        session.pop("user")
+
+    return redirect(url_for("login"))
+
+
 
 @app.route("/login")
 def login():
@@ -54,6 +98,7 @@ def authenticate():
         if creds[user] == passw:
             print("Logged in!")
             status = "Logged in successfully!"
+            session["user"] = request.form["name"]
         else:
             print("Password incorrect!")
             status = "Password incorrect!"

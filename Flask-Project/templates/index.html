@@ -23,7 +23,14 @@
         </style>
     </head>
     <body class='bg-light' style='min-height:100vh;' >
-        <div class='container bg-white' style='min-height:100vh;'>
+
+      
+      
+     
+      
+      
+      
+      <div class='container bg-white' style='min-height:100vh;'>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                 <a class="nav-link active" id="emp-tab" data-toggle="tab" href="#emp" role="tab" aria-controls="emp"
@@ -36,6 +43,14 @@
                 <li class="nav-item">
                 <a class="nav-link" id="About-tab" data-toggle="tab" href="#About" role="tab" aria-controls="About"
                     aria-selected="false">Activity Log</a>
+                </li>
+
+                <li class="nav-item">
+                  {% if "user" in session %}
+
+                  <a class='btn btn-sm btn-danger' href='/logout' >Logout</a>
+
+                  {% endif %}
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">

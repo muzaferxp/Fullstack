@@ -8,10 +8,7 @@ $.ajax({
     dataType : "JSON",
     success : function(data){
         console.log(data)
-
         main_data = data.data
-       
-        
         init_project(main_data["current_projects"])
         init_emp(main_data["emp_data"])
     },
@@ -262,3 +259,5 @@ function search_emp(){
 var input = document.querySelector("#project_skills_input")
 
 new Tagify(input)
+
+
