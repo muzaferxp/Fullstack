@@ -182,9 +182,31 @@ def ajax_api():
 def ajax_test():
     return render_template("ajax_test.html")
 
+def search_blog(data,tag):
+    res = []
+    for blog in data:
+        if tag in data[blog]["tags"]:
+            res.append(data[blog])
+    
+    return {"data" : res}
+
+@app.route("/blog")
+def blog():
+    file = open(ROOT_DIR + "/Flask-Project/static/blogs.json")
+    data = json.load(file)
+    file.close()
+    return render_template("blog.html",data = data)
 
 
+@app.route("/search_blog", methods=["GET", "POST"])
+def search():
+    file = open(ROOT_DIR + "/Flask-Project/static/blogs.json")
+    data = json.load(file)
+    file.close()
 
+    res = search_blog(data,request.form["tag"])
+
+    return res
 
 
 if __name__ == "__main__":
