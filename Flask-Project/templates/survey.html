@@ -24,6 +24,8 @@
             var fd = new FormData($( 'form#data_form' )[ 0 ] );
             $.ajax({
                 type: "POST",
+                processData: false,
+                contentType: false,
                 url : "/save_survey_data",
                 data : fd,
                 dataType : 'JSON',
